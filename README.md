@@ -16,13 +16,19 @@ Contact somebody in the group that can vouch for you.
 
 After joining the webring, simply paste the following on your website to render the widget.
 
-```javascript
+```html
 <div id='donaldsonwebring'>
 <script type="text/javascript" src="https://webring.joshpsawyer.com/onionring-variables.js"></script>
 <script type="text/javascript" src="https://webring.joshpsawyer.com/onionring-widget.js"></script>
 </div>
 ```
 
-## Can I change the widget style?
+## Is there a style?
 
-Yes! The CSS for the widget comes from [onionring.css] but you can overload the styles on your website.
+Sure, there's some default styling done via [onionring.css](onionring.css). Load it with
+
+```html
+<link rel="stylesheet" href="scriptURL/onionring.css">
+```
+
+in the `<head></head>` part of your website... or don't and just write your own CSS! Use the #donaldsonwebring selector to target the elements.
