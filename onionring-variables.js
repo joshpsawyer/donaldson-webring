@@ -7,8 +7,21 @@
 
 //the full URLs of all the sites in the ring
 var sites = [
-'https://www.joshpsawyer.com/',
-'https://www.amberzgordon.ink/',
+    {
+        "url": 'https://www.joshpsawyer.com/',
+        "name": "josh's internet scrapyard",
+        "description": "pixel art, paintings, games by josh sawyer"
+    },
+    {
+        "url": 'https://www.amberzgordon.ink/',
+        "name": "Amber Z. Gordon",
+        "description": "personal portfolio of Amber Z. Gordon"
+    },
+    {
+        "url": 'http://annaglinsmann.de/',
+        "name": "annaglin - Anna Glinsmann Illustration, Animation, Interaktion",
+        "description": "Glinsmann Illustration, Animation, Interaktion"
+    },
 ];
 
 //the name of the ring
@@ -25,4 +38,4 @@ var useIndex = true;
 var indexPage = 'https://webring.joshpsawyer.com/index.html';
 
 //should the widget include a random button?
-var useRandom = true;
+var useRandom = false;
