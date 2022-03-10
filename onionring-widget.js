@@ -12,7 +12,7 @@ thisIndex = null;
 
 // go through the site list to see if this site is on it and find its position
 for (i = 0; i < sites.length; i++) {
-  if (thisSite.startsWith(sites[i])) { //we use startswith so this will match any subdirectory, users can put the widget on multiple pages
+  if (thisSite.startsWith(sites[i].url)) { //we use startswith so this will match any subdirectory, users can put the widget on multiple pages
     thisIndex = i;
     break; //when we've found the site, we don't need to search any more, so stop the loop
   }
@@ -22,7 +22,7 @@ function randomSite() {
   otherSites = sites.slice(); //create a copy of the sites list
   otherSites.splice(thisIndex, 1); //remove the current site so we don't just land on it again
   randomIndex = Math.floor(Math.random() * otherSites.length);
-  location.href = otherSites[randomIndex];
+  location.href = otherSites[randomIndex].url;
 }
 
 //if we didn't find the site in the list, the widget displays a warning instead
@@ -58,13 +58,13 @@ else {
   tag.insertAdjacentHTML('afterbegin', `
   <table>
     <tr>
-      <td class='webring-prev'><a href='${sites[previousIndex]}'>← previous</a></td>
+      <td class='webring-prev'><a href='${sites[previousIndex].url}'>← ${sites[previousIndex].name}</a></td>
       <td class='webring-info'>This site is part of the ${ringName} webring</br>
       <span class='webring-links'>
         ${randomText}
         ${indexText}
         <a href='https://garlic.garden/onionring/'>what is this?</a></span></td>
-      <td class='webring-next'><a href='${sites[nextIndex]}'>next →</a></td>
+      <td class='webring-next'><a href='${sites[nextIndex]}'>${sites[nextIndex].name} →</a></td>
     </tr>
   </table>
   `);

@@ -15,10 +15,8 @@ for (i = 0; i < sites.length; i++) {
 
 tag.insertAdjacentHTML('afterbegin', `
 <table>
-<th>
-<td>Name</td>
-<td>Description</td>
-</th>
+<th>Name</th>
+<th>Description</th>
 ${list}
 </table>
 `);

@@ -22,6 +22,11 @@ var sites = [
         "name": "annaglin - Anna Glinsmann Illustration, Animation, Interaktion",
         "description": "Glinsmann Illustration, Animation, Interaktion"
     },
+    {
+        "url": 'https://jennyluco.com/',
+        "name": "Art and Illustration by Jenny Luco",
+        "description": "Jenny Luco is an artist / illustrator from the Netherlands. She loves to draw and paint whimsical scenes and cute creatures."
+    },
 ];
 
 //the name of the ring
