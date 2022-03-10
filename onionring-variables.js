@@ -7,14 +7,12 @@
 
 //the full URLs of all the sites in the ring
 var sites = [
-'https://joshpsawyer.com/',
-'https://example.com/',
-'https://example.com/',
-'https://example.com/'
+'https://www.joshpsawyer.com/',
+'https://www.amberzgordon.ink/',
 ];
 
 //the name of the ring
-var ringName = 'The Donaldson Webring';
+var ringName = 'Donaldsons';
 
 /* the unique ID of the widget. two things to note:
  1) make sure there are no spaces in it - use dashes or underscores if you must
@@ -24,7 +22,7 @@ var ringID = 'donaldsonwebring';
 //should the widget include a link to an index page?
 var useIndex = true;
 //the full URL of the index page. if you're not using one, you don't have to specify anything here
-var indexPage = 'https://example.com/index.html';
+var indexPage = 'https://webring.joshpsawyer.com/index.html';
 
 //should the widget include a random button?
 var useRandom = true;
