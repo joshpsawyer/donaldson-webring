@@ -28,7 +28,7 @@ After joining the webring, simply paste the following on your website to render 
 Sure, there's some default styling done via [onionring.css](onionring.css). Load it with
 
 ```html
-<link rel="stylesheet" href="scriptURL/onionring.css">
+<link rel="stylesheet" href="https://webring.joshpsawyer.com/onionring.css">
 ```
 
 in the `<head></head>` part of your website... or don't and just write your own CSS! Use the #donaldsonwebring selector to target the elements.
