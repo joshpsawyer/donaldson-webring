@@ -163,7 +163,7 @@ main#content {
     grid-area: maincontent;
     z-index: 10;
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:
     "content"
@@ -186,7 +186,17 @@ footer#sitefooter {
 }
 
 div#footercontent {
+    line-height: 3rem;
     grid-area: content;
     text-align: center;
 
+}
+
+@media all and (min-width: 52rem) {
+    /* add the columns on either side to prevent the website from stretching too wide */
+
+    main#content {
+        grid-template-columns: 1fr var(--site-max-width) 1fr;
+        grid-template-areas: ". maincontent . ";
+    }
 }
