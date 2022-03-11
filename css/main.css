@@ -197,6 +197,6 @@ div#footercontent {
 
     main#content {
         grid-template-columns: 1fr var(--site-max-width) 1fr;
-        grid-template-areas: ". maincontent . ";
+        grid-template-areas: ". content . ";
     }
 }
