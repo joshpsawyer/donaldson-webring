@@ -183,7 +183,7 @@ main#content {
 div#maincontent {
     grid-area: content;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 6fr;
     padding: 0;
 }
 
@@ -208,8 +208,10 @@ div#footercontent {
 }
 
 div.entry {
+    grid-column: span 3;
     margin: 1rem 0;
     color: var(--color-near-white);
+    grid-span
 }
 
 div.entry:hover {
