@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Kenney Pixel';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url('../fonts/kenney_pixel-webfont.woff') format('woff'),
+		url('../fonts/kenney_pixel-webfont.woff2') format('woff2');
+	/* font-display: swap; */
+}

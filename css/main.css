@@ -152,7 +152,9 @@ header#siteheader {
     text-transform: uppercase;
     text-align: center;
     background-color: var(--color-medium);
-    color: var(--color-dark);
+    color: var(--color-white);
+    font-family: "Kenney Pixel", 'Share Tech Mono', 'Courier Prime', 'Courier New', sans-serif;
+    font-size: 2rem;
 }
 
 div#headercontent {
@@ -177,7 +179,9 @@ div#maincontent {
 footer#sitefooter {
     height: 3rem;
     background-color: var(--color-medium);
-    color: var(--color-dark);
+    color: var(--color-white);
+    font-family: "Kenney Pixel", 'Share Tech Mono', 'Courier Prime', 'Courier New', sans-serif;
+    font-size: 1rem;
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr;
