@@ -170,7 +170,7 @@ main#content {
 }
 
 div#maincontent {
-    grid-area: maincontent;
+    grid-area: content;
     padding: 0;
 }
 
