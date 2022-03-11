@@ -10,12 +10,21 @@ var tag = document.getElementById(ringID); //find the widget on the page
 thisSite = window.location.href; //get the url of the site we're currently on
 thisIndex = null;
 
+function removeHttp(url) {
+  return url.replace(/^https?:\/\//, '');
+}
+
 // go through the site list to see if this site is on it and find its position
 for (i = 0; i < sites.length; i++) {
-  if (thisSite.startsWith(sites[i].url)) { //we use startswith so this will match any subdirectory, users can put the widget on multiple pages
+  if (removeHttp(thisSite).startsWith(removeHttp(sites[i].url))) { //we use startswith so this will match any subdirectory, users can put the widget on multiple pages
     thisIndex = i;
     break; //when we've found the site, we don't need to search any more, so stop the loop
   }
+}
+
+// site not found, but! maybe we're testing locally?
+if (removeHttp(thisSite).startsWith("127.0.0.1")) {
+  thisIndex = 0;
 }
 
 function randomSite() {
