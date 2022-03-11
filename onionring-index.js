@@ -10,13 +10,9 @@ regex = /^https:\/\/|\/$/g; //strips the https:// and trailing slash off the url
 
 list = "";
 for (i = 0; i < sites.length; i++) {
-  list += `<tr><td><a href='${sites[i].url}'>${sites[i].name.replace(regex, "")}</td><td>${sites[i].description}</td></a>`;
+  list += `<div class="entry"><a href='${sites[i].url}'><span>${sites[i].name.replace(regex, "")} - ${sites[i].description}</span></a></div>`;
 }
 
 tag.insertAdjacentHTML('afterbegin', `
-<table>
-<th>Name</th>
-<th>Description</th>
 ${list}
-</table>
 `);
