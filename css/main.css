@@ -183,6 +183,7 @@ main#content {
 div#maincontent {
     grid-area: content;
     padding: 0;
+    margin: 1rem 0;
 }
 
 div#index {
