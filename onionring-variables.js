@@ -27,6 +27,11 @@ var sites = [
         "name": "Jenny Luco's Portfolio",
         "description": "Jenny Luco is an artist / illustrator from the Netherlands. She loves to draw and paint whimsical scenes and cute creatures."
     },
+    {
+        "url": 'http://daveastels.com/',
+        "name": "Dave Astels Art",
+        "description": "The artistic adventures of Dave Astels"
+    },
 ];
 
 //the name of the ring
