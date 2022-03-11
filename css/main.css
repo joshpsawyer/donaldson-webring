@@ -1,10 +1,10 @@
 :root {
     --site-max-width: 900px;
     --site-max-width: 900px;
-    --color-near-white: #fff6d3;
-    --color-light: #f9a875;
-    --color-medium: #eb6b6f;
-    --color-dark: #7c3f58;
+    --color-near-white: #e2f3e4;
+    --color-light: #94e344;
+    --color-medium: #46878f;
+    --color-dark: #332c50;
     /* https://lospec.com/palette-list/mist-gb */
 }
 
