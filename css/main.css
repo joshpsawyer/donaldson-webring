@@ -1,10 +1,10 @@
 :root {
     --site-max-width: 900px;
     --site-max-width: 900px;
-    --color-near-white: #e2f3e4;
-    --color-light: #94e344;
-    --color-medium: #46878f;
-    --color-dark: #332c50;
+    --color-near-white: #ffffb5;
+    --color-light: #7bc67b;
+    --color-medium: #6b8c42;
+    --color-dark: #5a3921;
     /* https://lospec.com/palette-list/mist-gb */
 }
 
@@ -151,8 +151,8 @@ header#siteheader {
         "headercontent";
     text-transform: uppercase;
     text-align: center;
-    background-color: var(--color-light);
-    color: var(--color-near-white);
+    background-color: var(--color-medium);
+    color: var(--color-dark);
 }
 
 div#headercontent {
@@ -176,8 +176,8 @@ div#maincontent {
 
 footer#sitefooter {
     height: 3rem;
-    background-color: var(--color-light);
-    color: var(--color-near-white);
+    background-color: var(--color-medium);
+    color: var(--color-dark);
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr;
