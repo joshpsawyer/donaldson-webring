@@ -10,21 +10,21 @@ var sites = [
     {
         "url": 'https://www.joshpsawyer.com/',
         "name": "josh's internet scrapyard",
-        "description": "pixel art, paintings, games by josh sawyer"
+        "description": "Josh is an artist creating pixel art, paintings, and games. He also publishes a blog with tutorials and other nonsense."
     },
     {
         "url": 'https://www.amberzgordon.ink/',
-        "name": "Amber Z. Gordon",
-        "description": "personal portfolio of Amber Z. Gordon"
+        "name": "Amber Z. Gordon's Portfolio",
+        "description": "Amber Z. Gordon is a self-taught artist living in Victoria, BC, Canada. They work work in watercolour, gouache, and digital media."
     },
     {
-        "url": 'https://annaglinsmann.de/',
-        "name": "annaglin - Anna Glinsmann Illustration, Animation, Interaktion",
-        "description": "Glinsmann Illustration, Animation, Interaktion"
+        "url": 'http://annaglinsmann.de/',
+        "name": "Anna Glinsmann's Portfolio",
+        "description": "Anna Glinsmann is an artist creating illustrations, animations, and games."
     },
     {
         "url": 'https://jennyluco.com/',
-        "name": "Art and Illustration by Jenny Luco",
+        "name": "Jenny Luco's Portfolio",
         "description": "Jenny Luco is an artist / illustrator from the Netherlands. She loves to draw and paint whimsical scenes and cute creatures."
     },
 ];
