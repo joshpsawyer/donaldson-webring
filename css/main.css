@@ -209,6 +209,12 @@ div#footercontent {
 
 div.entry {
     margin: 1rem 0;
+    color: var(--color-near-white);
+}
+
+div.entry:hover {
+    background-color: var(--color-light);
+    border: 2px solid var(--color-medium);
 }
 
 div.entry:nth-child(even) {
