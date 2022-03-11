@@ -181,11 +181,11 @@ main#content {
 }
 
 div#maincontent {
+    grid-area: content;
     padding: 0;
 }
 
 div#index {
-    grid-area: content;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 1rem;
