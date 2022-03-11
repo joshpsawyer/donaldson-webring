@@ -134,7 +134,7 @@ div.container {
     overflow-y: scroll;
     height: 100vh;
     display: grid;
-    grid-template-rows: 4rem 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
     grid-template-areas:
     "header"
@@ -143,7 +143,6 @@ div.container {
 }
 
 header#siteheader {
-    line-height: 4rem;
     grid-area: header;
     display: grid;
     grid-template-columns: 1fr;
@@ -152,13 +151,24 @@ header#siteheader {
     text-align: center;
     background-color: var(--color-light);
     color: var(--color-white);
-    font-family: "Kenney Pixel", 'Share Tech Mono', 'Courier Prime', 'Courier New', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 3px;
 }
 
 div#headercontent {
     grid-area: headercontent;
+}
+
+div#headercontent h1 {
+    font-family: "Kenney Pixel", 'Share Tech Mono', 'Courier Prime', 'Courier New', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin: 1rem 0 0 0;
+}
+
+div#headercontent span.subtitle {
+    font-family: "Kenney Pixel", 'Share Tech Mono', 'Courier Prime', 'Courier New', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin: 0 0 1rem 0;
 }
 
 main#content {
