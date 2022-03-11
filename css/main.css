@@ -144,6 +144,10 @@ header#banner {
     grid-template-columns: 1fr;
     grid-template-areas:
         "headercontent";
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--color-light);
+    color: var(--color-near-white);
 }
 
 div#mainandfooter {
@@ -171,4 +175,7 @@ main#content {
 footer#contentinfo {
     height: 3rem;
     grid-area: footer;
+    text-align: center;
+    background-color: var(--color-light);
+    color: var(--color-near-white);
 }
