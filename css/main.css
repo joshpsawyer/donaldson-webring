@@ -1,5 +1,6 @@
 :root {
     --site-max-width: 900px;
+    --site-max-width: 900px;
     --color-near-white: #fff6d3;
     --color-light: #f9a875;
     --color-medium: #eb6b6f;
@@ -129,16 +130,20 @@ aside, nav, article, figure {
 /***** Layout *****/
 
 div.container {
+    overflow-x: auto;
+    overflow-y: scroll;
     height: 100vh;
     display: grid;
-    grid-template-rows: 72px 1fr;
+    grid-template-rows: 4rem 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:
     "header"
     "maincontent"
+    "footer"
 }
 
-header#banner {
+header#siteheader {
+    line-height: 4rem;
     grid-area: header;
     display: grid;
     grid-template-columns: 1fr;
@@ -150,32 +155,38 @@ header#banner {
     color: var(--color-near-white);
 }
 
-div#mainandfooter {
-    overflow-x: auto;
-    overflow-y: scroll;
-    grid-area:maincontent;
+div#headercontent {
+    grid-area: headercontent;
+}
+
+main#content {
+    grid-area: maincontent;
     z-index: 10;
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr;
     grid-template-areas:
     "content"
-    "footer";
 }
 
-div#headercontent {
-    grid-area: headercontent;
-}
-
-main#content {
-    grid-area: content;
+div#maincontent {
+    grid-area: maincontent;
     padding: 0;
 }
 
-footer#contentinfo {
+footer#sitefooter {
     height: 3rem;
-    grid-area: footer;
-    text-align: center;
     background-color: var(--color-light);
     color: var(--color-near-white);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "content"
+}
+
+div#footercontent {
+    grid-area: content;
+    text-align: center;
+
 }
