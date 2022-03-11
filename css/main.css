@@ -181,6 +181,10 @@ main#content {
 }
 
 div#maincontent {
+    padding: 0;
+}
+
+div#index {
     grid-area: content;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
