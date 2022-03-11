@@ -25,11 +25,10 @@ a {
 
 }
 a:link, a:visited {
-	color: var(--color-medium);
+    color: var(--color-white);
 	text-decoration: underline;
 }
 a:hover, a:active {
-    background-color: var(--color-medium);
     color: var(--color-light);
 }
 
@@ -206,6 +205,26 @@ div#footercontent {
     grid-area: content;
     text-align: center;
 
+}
+
+div.entry {
+    margin: 1rem 0;
+}
+
+div.entry:nth-child(even) {
+    background: var(--color-medium)
+}
+div.entry:nth-child(odd) {
+    background: var(--color-dark)
+}
+
+div.entry a {
+    display: block;
+    text-decoration: none;
+}
+
+div.entrytext {
+    padding: 1rem;
 }
 
 @media all and (min-width: 52rem) {
