@@ -211,20 +211,27 @@ div.entry {
     grid-column: span 3;
     margin: 1rem 0;
     color: var(--color-near-white);
-    grid-span
 }
 
-div.entry:hover {
-    background-color: var(--color-light);
+
+div.entry:nth-child(even) {
+    background: var(--color-medium);
     border: 2px solid var(--color-medium);
 }
 
-div.entry:nth-child(even) {
-    background: var(--color-medium)
+div.entry:nth-child(even):hover {
+    background-color: var(--color-light);
 }
+
 div.entry:nth-child(odd) {
-    background: var(--color-dark)
+    border: 2px solid var(--color-medium);
+    background: var(--color-dark);
 }
+
+div.entry:nth-child(odd):hover {
+    background-color: var(--color-light);
+}
+
 
 div.entry a {
     display: block;
