@@ -18,7 +18,7 @@ var sites = [
         "description": "personal portfolio of Amber Z. Gordon"
     },
     {
-        "url": 'http://annaglinsmann.de/',
+        "url": 'https://annaglinsmann.de/',
         "name": "annaglin - Anna Glinsmann Illustration, Animation, Interaktion",
         "description": "Glinsmann Illustration, Animation, Interaktion"
     },

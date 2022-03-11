@@ -1,0 +1,174 @@
+:root {
+    --site-max-width: 900px;
+    --color-near-white: #fff6d3;
+    --color-light: #f9a875;
+    --color-medium: #eb6b6f;
+    --color-dark: #7c3f58;
+    /* https://lospec.com/palette-list/mist-gb */
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background-color: var(--color-near-white);
+    color: var(--color-dark);
+}
+
+/* Anchors */
+a {
+    outline: 0;
+
+}
+a:link, a:visited {
+	color: var(--color-medium);
+	text-decoration: underline;
+}
+a:hover, a:active {
+    background-color: var(--color-medium);
+    color: var(--color-light);
+}
+
+div.line-block,
+p { margin-top: 1em;
+    margin-bottom: 1em;}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+/* Lists */
+ul {
+	list-style: outside square;
+	margin: 0em 0 0 1.5em;
+}
+
+ol {
+	list-style: outside decimal;
+	margin: 0em 0 0 1.5em;
+}
+
+li { margin-top: 0.5em;
+     margin-bottom: 1em; }
+
+     /* Lists */
+ul {
+	list-style: outside square;
+	margin: 0em 0 0 1.5em;
+}
+
+ol {
+	list-style: outside decimal;
+	margin: 0em 0 0 1.5em;
+}
+
+li { margin-top: 0.5em;
+     margin-bottom: 1em; }
+
+.post-info {
+    /* float:right; */
+    margin:10px 0;
+    /* padding:5px; */
+}
+
+.post-info p{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.readmore { float: right }
+
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+pre{background-color:  rgb(238, 238, 238); padding: 10px; margin: 10px; overflow: auto;}
+
+/* Quotes */
+blockquote {
+    margin: 20px;
+    font-style: italic;
+}
+cite {}
+
+q {}
+
+div.note {
+   float: right;
+   margin: 5px;
+   font-size: 85%;
+   max-width: 300px;
+}
+
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+
+/* Thead */
+thead th {padding: .5em .4em; text-align: left;}
+thead td {}
+
+/* Tbody */
+tbody td {padding: .5em .4em;}
+tbody th {}
+
+tbody .alt td {}
+tbody .alt th {}
+
+/* Tfoot */
+tfoot th {}
+tfoot td {}
+
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+
+/***** Layout *****/
+
+div.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 72px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "maincontent"
+}
+
+header#banner {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "headercontent";
+}
+
+div#mainandfooter {
+    overflow-x: auto;
+    overflow-y: scroll;
+    grid-area:maincontent;
+    z-index: 10;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "content"
+    "footer";
+}
+
+div#headercontent {
+    grid-area: headercontent;
+}
+
+main#content {
+    grid-area: content;
+    padding: 0;
+}
+
+footer#contentinfo {
+    height: 3rem;
+    grid-area: footer;
+}
