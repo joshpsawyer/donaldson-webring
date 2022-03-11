@@ -19,7 +19,7 @@ var sites = [
     },
     {
         "url": 'http://annaglinsmann.de/',
-        "name": "Anna Glinsmann's Portfolio",
+        "name": "Anna Glin Portfolio",
         "description": "Anna Glinsmann is an artist creating illustrations, animations, and games."
     },
     {
