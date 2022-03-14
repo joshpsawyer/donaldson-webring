@@ -18,3 +18,7 @@
 #donaldsonwebring table .webring-next {
     text-align: right;
 }
+
+#donaldsonwebring table tr td {
+    width: 33%;
+}
