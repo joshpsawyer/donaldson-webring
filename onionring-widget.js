@@ -68,11 +68,7 @@ else {
   <table>
     <tr>
       <td class='webring-prev'><a href='${sites[previousIndex].url}'>← ${sites[previousIndex].name}</a></td>
-      <td class='webring-info'>${ringName}</br>
-      <span class='webring-links'>
-        ${randomText}
-        ${indexText}
-        powered by <a href='https://garlic.garden/onionring/'>Onionring</a></span></td>
+      <td class='webring-info'><a href='${indexPage}'><strong>${ringName}</strong></a></td>
       <td class='webring-next'><a href='${sites[nextIndex].url}'>${sites[nextIndex].name} →</a></td>
     </tr>
   </table>
