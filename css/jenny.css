@@ -6,3 +6,15 @@
 #donaldsonwebring table {
     width: 100%;
 }
+
+#donaldsonwebring table .webring-prev {
+    text-align: left;
+}
+
+#donaldsonwebring table .webring-info {
+    text-align: center;    
+}
+
+#donaldsonwebring table .webring-next {
+    text-align: right;
+}
