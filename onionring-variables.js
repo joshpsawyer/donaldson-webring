@@ -32,6 +32,11 @@ var sites = [
         "name": "Dave Astels Art",
         "description": "The artistic adventures of Dave Astels"
     },
+    {
+        "url": 'https://sydbird.net/',
+        "name": "sydbird.net",
+        "description": "Art and photography (usually bird-related) from North Carolina-based weirdo, Sydney BH"
+    }
 ];
 
 //the name of the ring
