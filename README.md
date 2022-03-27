@@ -23,6 +23,24 @@ After joining the webring, simply paste the following on your website to render 
 </div>
 ```
 
+The above renders a table with one row and 3 columns. To render a table with 3 rows and one column, use:
+
+```html
+<div id='donaldsonwebring'>
+<script type="text/javascript" src="https://webring.joshpsawyer.com/onionring-variables.js"></script>
+<script type="text/javascript" src="https://webring.joshpsawyer.com/onionring-widget-vertical.js"></script>
+</div>
+```
+
+For more control, you can render 3 divs and no table:
+
+```html
+<div id='donaldsonwebring'>
+<script type="text/javascript" src="https://webring.joshpsawyer.com/onionring-variables.js"></script>
+<script type="text/javascript" src="https://webring.joshpsawyer.com/onionring-widget-div.js"></script>
+</div>
+```
+
 ## Is there a style?
 
 Sure, there's some default styling done via [onionring.css](onionring.css). Load it with
