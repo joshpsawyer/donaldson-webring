@@ -33,7 +33,7 @@ var sites = [
         "description": "The artistic adventures of Dave Astels"
     },
     {
-        "url": "https://sydbird.net/",
+        "url": "https://www.sydbird.net/",
         "name": "sydbird.net",
         "description": "Art and photography (usually bird-related) from North Carolina-based weirdo, Sydney BH"
     },
